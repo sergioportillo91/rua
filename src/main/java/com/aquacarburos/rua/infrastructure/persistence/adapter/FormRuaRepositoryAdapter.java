@@ -16,6 +16,11 @@ import java.util.Optional;
 @Component
 @RequiredArgsConstructor
 public class FormRuaRepositoryAdapter implements FormRuaRepository {
+    @Override
+    public List<FormRua> findByNitAndNombre(String nit, String nombreEmpresa) {
+        return jpaRepository.findByNitAndNombreEmpresa(nit, nombreEmpresa).stream()
+                .map(mapper::toDomain)
+                .toList();
 
     private final JpaFormRuaRepository jpaRepository;
 

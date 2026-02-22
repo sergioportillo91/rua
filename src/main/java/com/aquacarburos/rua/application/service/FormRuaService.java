@@ -18,13 +18,15 @@ public class FormRuaService {
 
     public FormRua crear(FormRua formRua) {
         String nitNormalizado = normalizarNit(formRua.getNit());
+        String nombreEmpresa = formRua.getNombreEmpresa();
         if (nitNormalizado.isBlank()) {
             throw new IllegalArgumentException("El NIT es obligatorio y solo debe contener números.");
         }
         formRua.setNit(nitNormalizado);
 
-        if (formRuaRepository.findByNit(nitNormalizado).isPresent()) {
-            throw new IllegalArgumentException("La empresa ya ha hecho su registro.");
+        List<FormRua> registros = formRuaRepository.findByNitAndNombre(nitNormalizado, nombreEmpresa);
+        if (!registros.isEmpty()) {
+            throw new IllegalArgumentException("La empresa ya ha hecho su registro con ese NIT y nombre.");
         }
 
         return formRuaRepository.save(formRua);

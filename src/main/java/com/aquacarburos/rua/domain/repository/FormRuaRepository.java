@@ -18,4 +18,5 @@ public interface FormRuaRepository {
     Page<FormRua> findAll(Pageable pageable);
 
     Optional<FormRua> findByNit(String nit);
+    List<FormRua> findByNitAndNombre(String nit, String nombreEmpresa);
 }

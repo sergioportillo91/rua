@@ -9,4 +9,5 @@ import java.util.Optional;
 @Repository
 public interface JpaFormRuaRepository extends JpaRepository<FormRuaEntity, Long> {
     Optional<FormRuaEntity> findByNit(String nit);
+    List<FormRuaEntity> findByNitAndNombreEmpresa(String nit, String nombreEmpresa);
 }
