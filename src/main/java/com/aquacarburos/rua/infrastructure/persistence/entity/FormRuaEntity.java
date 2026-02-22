@@ -118,6 +118,18 @@ public class FormRuaEntity {
     @Column(name = "nombre_empresa_acueducto")
     private String nombreEmpresaAcueducto;
 
+    @Column(name = "uso_suelo", nullable = false)
+    private String usoSuelo;
+
+    @Column(name = "diagrama_actividad_pdf", nullable = false)
+    private String diagramaActividadPdf;
+
+    @Column(name = "certificado_generador_respel_2025", nullable = false)
+    private String certificadoGeneradorRespel2025;
+
+    @Column(name = "plan_gestion_integral_residuos_peligrosos", nullable = false)
+    private String planGestionIntegralResiduosPeligrosos;
+
     @Column(name = "salidas_agua")
     private String salidasAgua;
 
@@ -184,17 +196,10 @@ public class FormRuaEntity {
     @Column(name = "caudal_salida_ls")
     private String caudalSalidaLs;
 
-    @Column(name = "longitud_rejillas_perimetrales", columnDefinition = "TEXT")
-    private String longitudRejillasPerimetrales;
-
-    @Column(name = "area_canopy", columnDefinition = "TEXT")
-    private String areaCanopy;
 
     @Column(name = "pozo_septico_entrada_salida_agua")
     private String pozoSepticoEntradaSalidaAgua;
 
-    @Column(name = "area_disposicion_final", columnDefinition = "TEXT")
-    private String areaDisposicionFinal;
 
     @Column(name = "reporte_filtros_contaminados")
     private String reporteFiltrosContaminados;
@@ -202,14 +207,8 @@ public class FormRuaEntity {
     @Column(name = "reporte_trapos_absorbentes_contaminados")
     private String reporteTraposAbsorbentesContaminados;
 
-    @Column(name = "medio_almacenamiento_residuos_peligrosos", columnDefinition = "TEXT")
-    private String medioAlmacenamientoResiduosPeligrosos;
-
     @Column(name = "medio_transporte_residuos")
     private String medioTransporteResiduos;
-
-    @Column(name = "plan_gestion_integral_residuos_peligrosos", columnDefinition = "TEXT")
-    private String planGestionIntegralResiduosPeligrosos;
 
     @Column(name = "realiza_emisiones_aire")
     private String realizaEmisionesAire;

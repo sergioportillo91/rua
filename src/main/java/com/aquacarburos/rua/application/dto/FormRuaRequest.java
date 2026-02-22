@@ -132,25 +132,25 @@ public class FormRuaRequest {
 
     private String caudalSalidaLs;
 
-    private String longitudRejillasPerimetrales;
-
-    private String areaCanopy;
-
     private String pozoSepticoEntradaSalidaAgua;
-
-    private String areaDisposicionFinal;
 
     private String reporteFiltrosContaminados;
 
     private String reporteTraposAbsorbentesContaminados;
 
-    private String medioAlmacenamientoResiduosPeligrosos;
 
     private String medioTransporteResiduos;
 
-    private String planGestionIntegralResiduosPeligrosos;
 
     private String realizaEmisionesAire;
 
     private String aprovechamientoForestal;
+    @NotBlank(message = "El uso del suelo es obligatorio")
+    private String usoSuelo;
+    @NotBlank(message = "¿Diagrama de actividad? es obligatorio")
+    private String diagramaActividadPdf;
+    @NotBlank(message = "¿Certificado de generador de RESPEL año 2025? es obligatorio")
+    private String certificadoGeneradorRespel2025;
+    @NotBlank(message = "¿Cómo se gestiona la recolección de residuos peligrosos? es obligatorio")
+    private String planGestionIntegralResiduosPeligrosos;
 }

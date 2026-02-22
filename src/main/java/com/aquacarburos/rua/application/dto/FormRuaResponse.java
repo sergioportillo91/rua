@@ -123,10 +123,6 @@ public class FormRuaResponse {
 
     private String caudalSalidaLs;
 
-    private String longitudRejillasPerimetrales;
-
-    private String areaCanopy;
-
     private String pozoSepticoEntradaSalidaAgua;
 
     private String areaDisposicionFinal;
@@ -135,11 +131,7 @@ public class FormRuaResponse {
 
     private String reporteTraposAbsorbentesContaminados;
 
-    private String medioAlmacenamientoResiduosPeligrosos;
-
     private String medioTransporteResiduos;
-
-    private String planGestionIntegralResiduosPeligrosos;
 
     private String realizaEmisionesAire;
 
@@ -148,4 +140,8 @@ public class FormRuaResponse {
     private LocalDateTime fechaCreacion;
 
     private LocalDateTime fechaModificacion;
+    private String usoSuelo;
+    private String diagramaActividadPdf;
+    private String certificadoGeneradorRespel2025;
+    private String planGestionIntegralResiduosPeligrosos;
 }

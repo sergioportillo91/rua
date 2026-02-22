@@ -124,4 +124,8 @@ public class FormRua {
     private String realizaEmisionesAire;
 
     private String aprovechamientoForestal;
+    private String usoSuelo;
+    private String diagramaActividadPdf;
+    private String certificadoGeneradorRespel2025;
+    private String planGestionIntegralResiduosPeligrosos;
 }
