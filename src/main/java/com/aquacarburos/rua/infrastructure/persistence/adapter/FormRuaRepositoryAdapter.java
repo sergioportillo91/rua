@@ -16,15 +16,16 @@ import java.util.Optional;
 @Component
 @RequiredArgsConstructor
 public class FormRuaRepositoryAdapter implements FormRuaRepository {
+    private final JpaFormRuaRepository jpaRepository;
+
+    private final FormRuaMapper mapper;
+
     @Override
     public List<FormRua> findByNitAndNombre(String nit, String nombreEmpresa) {
         return jpaRepository.findByNitAndNombreEmpresa(nit, nombreEmpresa).stream()
                 .map(mapper::toDomain)
                 .toList();
-
-    private final JpaFormRuaRepository jpaRepository;
-
-    private final FormRuaMapper mapper;
+    }
 
     @Override
     public FormRua save(FormRua formRua) {
