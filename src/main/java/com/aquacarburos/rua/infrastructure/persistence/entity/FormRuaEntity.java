@@ -196,10 +196,8 @@ public class FormRuaEntity {
     @Column(name = "caudal_salida_ls")
     private String caudalSalidaLs;
 
-
     @Column(name = "pozo_septico_entrada_salida_agua")
     private String pozoSepticoEntradaSalidaAgua;
-
 
     @Column(name = "reporte_filtros_contaminados")
     private String reporteFiltrosContaminados;

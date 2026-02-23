@@ -123,9 +123,33 @@ public class FormRua {
 
     private String realizaEmisionesAire;
 
+    private String caudalEntradaLs;
+
+    private String caudalSalidaLs;
+
+    private String trampaGrasasCaudal;
+
+
+    private String informeCaracterizacion;
+
     private String aprovechamientoForestal;
+
+    private String reporteTraposAbsorbentesContaminados;
+
+    private String sistemaTratamientoAguasResiduales;
+
+
+    private String reporteFiltrosContaminados;
+
+    private String pozoSepticoEntradaSalidaAgua;
+
+    private String medioTransporteResiduos;
+
     private String usoSuelo;
+
     private String diagramaActividadPdf;
+
     private String certificadoGeneradorRespel2025;
+
     private String planGestionIntegralResiduosPeligrosos;
 }
